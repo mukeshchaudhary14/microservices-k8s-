@@ -1,5 +1,5 @@
 FROM python:alpine3.7
-COPY src/requirements.txt /app/requirements.txt
+COPY requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip install --upgrade pip && pip install -r requirements.txt
 ENV PORT 5000
